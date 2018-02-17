@@ -1,3 +1,4 @@
+// @flow
 import PropTypes from 'prop-types';
 import React from 'react';
 import map from '../../services/map';
@@ -64,8 +65,8 @@ function SpecificList({ ids, kind, entities }) {
 }
 
 function List({
-  ids,
-  isExpanded,
+  ids: number,
+  isExpanded: boolean,
   title,
   kind,
   requestInProcess,

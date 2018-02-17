@@ -1,6 +1,7 @@
 {
-  parser: "babel-eslint",
-  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "plugins": ["eslint-plugin-flowtype"],
   "rules": {
     "react/prop-types": 0,
     "react/jsx-no-bind": 0,
@@ -34,6 +35,6 @@
     "arrow-body-style": 0,
     "no-use-before-define": 0,
     "space-before-function-paren": [2, { "anonymous": "never", "named": "never" }],
-    "max-len": [1, 120, 2, {ignoreComments: true}]
+    "max-len": [1, 120, 2, {"ignoreComments": true}]
   }
 }
